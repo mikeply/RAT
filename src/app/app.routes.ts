@@ -6,6 +6,7 @@ import {Home} from './home/home';
 export const rootRouterConfig: Routes = [
   {path: '', redirectTo: 'home', terminal: true},
   {path: 'home', component: Home},
-  {path: 'about', component: About}
+  {path: 'about', component: About},
+  {path: "**", redirectTo: 'home', terminal:true}
 ];
 
